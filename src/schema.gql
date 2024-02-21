@@ -1,0 +1,13 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Test {
+  """hello world"""
+  test: String!
+}
+
+type Query {
+  """test"""
+  getTest: Test!
+}
