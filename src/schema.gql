@@ -7,7 +7,22 @@ type Test {
   test: String!
 }
 
+type User {
+  id: Int!
+  email: String!
+  name: String
+}
+
 type Query {
   """test"""
   getTest: Test!
+}
+
+type Mutation {
+  createUser(user: CreateUserInput!): User!
+}
+
+input CreateUserInput {
+  email: String!
+  name: String
 }
