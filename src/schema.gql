@@ -2,11 +2,6 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
-type Test {
-  """hello world"""
-  test: String!
-}
-
 type User {
   id: Int!
   email: String!
@@ -14,8 +9,9 @@ type User {
 }
 
 type Query {
-  """test"""
-  getTest: Test!
+  user(id: Float!): User!
+  users: User!
+  sayHello: String!
 }
 
 type Mutation {
